@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ 
+<suite name = "FlipKartAutomation" thread-count="3" >
+<test name="chrometest">
+<parameter name= "browser" value = "chrome"/>
+<parameter name= "url" value = "https://www.flipkart.com/"/>
+<parameter name="section" value="About"/>
+<classes>
+<class name = "flipcart.Hyperlinks"/>
+</classes>
+</test>
+
+<test name="edgetest">
+<parameter name= "browser" value = "edge"/>
+<parameter name= "url" value = "https://www.flipkart.com/"/>
+<parameter name="section" value="Help"/>
+<classes>
+<class name = "flipcart.Hyperlinks"/>
+</classes>
+</test>
+
+</suite>
